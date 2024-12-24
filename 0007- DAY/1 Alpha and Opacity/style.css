@@ -1,0 +1,18 @@
+/* ALPHA : SETS VISIBILITY OF COLOR */
+/* when you set alpha to 0 the also heading will be visible as it affect color only */
+div{
+    width: 200px;
+    height: 200px;
+    background-color: #4dff0000;
+    background-color: #4dff007f;
+    
+}
+
+/* OPACITY SETS VISIBILITY OF ITEM ITSELF */
+/* but when you set opacity to 0,everything inside div will be gone */
+#opacity{
+    background-color: #ffa511;
+    opacity:0 ;
+    opacity: 0.5;
+    opacity: 1;
+}

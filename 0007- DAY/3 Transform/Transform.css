@@ -1,0 +1,73 @@
+h6{
+    display: inline;
+}
+/*--------------------- ROTATE---------------------- */
+
+.base{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid black;
+    border-left:2px solid red;
+}
+/* ROTATE */
+.rotate{
+    background-color: #7be062;
+}
+.rotate:hover{
+    transform: rotate(90deg);
+}
+
+/*--------------------- SCALE---------------------- */
+/* 0.5 = half
+2 = 2 times bigger */
+.scale{
+    background-color:#ebb02d ;
+}
+.scale:hover{
+    transform: scale(1.5);
+    transform: scale(0.5 1.5);
+    transform: scale(.5 0.5);
+    transform: scaleX(1.5);
+    transform: scaleY(1.5);
+
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*--------------------- TRANSLATE---------------------- */
+.translate{
+    background-color: #073dee;
+}
+.translate:hover{
+    transform: translateX(200px);
+    transform: translateY(50px);
+    transform: translateY(-50px);
+    transform: translate(200px, 20px);
+}
+
+/*--------------------- SKEW---------------------- */
+.skew{
+    background-color: burlywood;
+}
+.skew:hover{
+    transform: skew(-45deg);
+}
+
+/*--------------------- ALL---------------------- */
+.All{
+    background-color: cyan;
+}
+.All{
+
+    transform: rotate(180deg) scale(1) translate(-50px,-2px) ;
+    transform: translate(50px,2px) rotate(180deg) scale(1)  ;
+
+}
+.All{
+    width: 100px; 
+    height: 100px;
+    background-color: cyan;
+    transform: rotate(30deg) scale(1) translate(90px,0px); 
+}

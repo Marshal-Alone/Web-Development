@@ -1,0 +1,32 @@
+
+/* span{
+     display: block; 
+     background-color: aqua; 
+    border: 2px solid black;
+    height: 100px;
+    width: 50px;
+    padding: 50px;
+    margin: 20px;
+}
+
+div{
+    border: 2px solid black;
+    height: 100px;
+    width: 90px;
+    padding: 50px;
+    margin: 20px;
+}*/
+
+div{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* #third{
+    display: none;
+    background-color: red;
+} */

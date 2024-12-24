@@ -1,0 +1,39 @@
+/* q1 */
+#box{
+    height: 150px;
+    width: 200px;
+    background-color: grey;
+    border: 5px dotted black;
+    margin: 20px 1em 40px 2em;
+    padding: 1em;
+}
+/* ------------------------------------------------ */
+
+/* Q2 */
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* ------------------------------------------------ */
+
+
+/* Q3 */
+li{
+    display: inline-block;
+}
+
+/* TO SHOW LIST ITEMS IN SAME LINE BUT STILL KEEP BULLET POINTS : USE FLEX */
+/* li{
+    display: inline-block;
+    margin-right: 30px;
+}
+ul{
+    display: flex;
+    list-style: disc;
+    padding-left: 10px;
+} */

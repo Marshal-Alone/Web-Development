@@ -1,0 +1,17 @@
+ #parent{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+}
+#child{
+    background-color: red;
+    height: 50%;
+    width: 50%;
+    margin-left: 10%;
+} 
+
+h1{
+    width:50%;
+    background-color: pink;
+}

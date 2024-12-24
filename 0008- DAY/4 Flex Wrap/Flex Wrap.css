@@ -1,0 +1,70 @@
+ 
+h3{
+    font-size: 2rem;
+}
+    span{
+    color: black;
+
+
+}
+h4{
+    font-weight: 900;
+    color: rgb(6, 31, 251);
+    font-size: 1.4rem;
+}
+.margin{
+    margin-left:100px ;
+}
+/* ------------------------------------------------------------------------ */
+.container{
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: azure;
+
+    /* ----------------------------------- */
+
+    display: flex;
+    flex-direction: row;
+}
+#h3{
+    text-align: center;
+}
+
+.container div{
+    height: 100px;
+    width: 400px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    
+    
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* 1- flex-wrap : no-wrap ;
+    Items stay on a single line (default behavior). */
+        .container1{
+            flex-wrap:nowrap ;           
+        }
+        
+ /* ------------------------------------------------------------------------ */
+ 
+ /* 2 - flex-wrap : wrap ;
+    Items wrap onto multiple lines as needed. */
+        .container2{
+            flex-wrap:wrap ;            
+        }
+        
+ /* ------------------------------------------------------------------------ */
+ 
+/* 3 - flexwrap : wrap-reverse ; 
+    Items wrap onto multiple lines in reverse order. */
+        .container3{
+            flex-wrap:wrap-reverse ;
+        }
+        
+        /* ------------------------------------------------------------------------ */
+        

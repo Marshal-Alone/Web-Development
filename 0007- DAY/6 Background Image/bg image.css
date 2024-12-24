@@ -1,0 +1,17 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: #7a7a7a;
+    margin: 30px auto;
+    color: black;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: dashed underline black;
+
+    background-image: url("SRC/bg3.jpg");
+    background-size: contain; /*IMAGE IS REPEATED TO FIT IMAGE*/
+    background-size: auto; /*IMAGE IS STRETCHED*/
+    background-size: cover; /*IMAGE IS CROPPED*/
+}

@@ -1,0 +1,48 @@
+h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 200px;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: azure;
+}
+.item {
+    height: 50px;
+    width: 200px;
+    color: rgb(14, 0, 0);
+    text-align: center;
+    font-size: 1.5em;
+    border: 2px solid black;
+    background-color: aqua;
+}
+
+h4 {
+    font-weight: 900;
+    color: rgb(6, 31, 251);
+    font-size: 1.4rem;
+}
+
+.margin {
+    margin-left: 100px;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+.center {
+    align-items: center;
+}
+.flex-end {
+    align-items: flex-end;
+}
+.baseline {
+    align-items: baseline;
+}
+.stretch {
+    align-items: stretch;
+}

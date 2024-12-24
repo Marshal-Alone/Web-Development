@@ -1,0 +1,19 @@
+
+_________ _____________  _____________
+id        class,          element &
+          attribute &     pseudo-element
+          pseudo-class   
+
+
+1.id
+2.Class,attribute & pseudo-Class
+3.elemt & pseudo-element
+
+
+
+- id >  class > element
+
+
+- specificity > cascading
+
+- inline style specificity > specificity > cascading

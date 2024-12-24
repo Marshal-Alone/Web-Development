@@ -1,0 +1,33 @@
+span{
+  color: blue;  
+}
+/* ------------------------------------------------------------------------ */
+.container{
+    height: 300px;
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: azure;
+
+    /* ----------------------------------- */
+
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+
+
+}
+#h3{
+    text-align: center;
+}
+
+.container div{
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+

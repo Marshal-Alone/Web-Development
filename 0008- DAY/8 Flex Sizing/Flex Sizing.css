@@ -1,0 +1,84 @@
+h3 {
+    font-size: 2rem;
+}
+
+span {
+    color: black;
+}
+
+h4 {
+    font-weight: 900;
+    color: rgb(6, 31, 251);
+    font-size: 1.4rem;
+}
+
+.margin {
+    margin-left: 100px;
+}
+
+.container {
+    width: 80%;
+    height: 200px;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+.container12{
+    height: 500px;
+    flex-direction: column;
+}
+
+#h3 {
+    text-align: center;
+}
+
+div div {
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* FLEX BASIS */
+#basis{
+    flex-basis: 400px;
+}
+
+
+/* FLEX GROW */
+#grow{
+    flex-grow: 1;   
+}
+#grow2{
+    flex-grow: 1;
+}
+#grow22{
+    flex-grow: 2;
+}
+#grow32{
+    flex-grow: 2;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+
+/* FLEX SHRINK */
+.container2 div{
+
+      height: 100px;
+      width: 350px;
+      color: white;
+      text-align: center;
+      font-size: 1.5em;  
+}
+
+#shrink{
+    flex-shrink: 1;/*default*/
+    flex-shrink: 2;
+}

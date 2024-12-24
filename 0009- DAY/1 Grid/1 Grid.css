@@ -1,0 +1,80 @@
+
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+
+
+}
+
+.item {
+    /* width: 100px;
+    height: 50px; */
+    background-color: yellowgreen;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* GRID TEMPLATE 
+        They define the lines & track sizing */
+.container{
+    grid-template-rows:50px 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px 200px;
+
+    /* grid-template-columns: auto auto auto; */
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* REPEAT
+        Repeat is used to divide all available space 
+        
+        1fr -> 1fraction of available space*/
+.container{
+    /* we want how many rows and columns (3 rows,3 cols) */ 
+    grid-template-rows: repeat(3,1fr);
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+/* ------------------------------------------------------------------------ */
+
+
+/* GRID GAPS 
+        They define gap between lines */
+    .container{
+        row-gap: 10px;
+        column-gap: 30px;
+
+        /* shorthand : grid-gap: row-gap column-gap */
+        grid-gap: 10px 30px;
+        grid-gap: 40px;
+    }
+
+/* ------------------------------------------------------------------------ */
+
+
+/* GRID COLUMNS 
+         Defines an items starting & ending position inside the column */
+
+.one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-column: 1/span 2;
+    /*span ke baad kitne box occupy karne hai vo number likhna*/
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* GRID ROWS 
+         Defines an items starting & ending position inside the row */
+
+.two{
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-row: 1/3;
+
+    grid-row: 2/span 3;
+}

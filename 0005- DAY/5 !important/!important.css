@@ -1,0 +1,13 @@
+#h1,#h2,#h3,#h4{
+    color: red;
+}
+
+/* TO SHOW MOST SPECIFIC THING IN  DOCUMENT  */
+
+/* priority higher than inline (higher than all) */
+
+#h1{
+    color: rgb(9, 208, 25) !important;
+
+}
+

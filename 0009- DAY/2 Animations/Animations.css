@@ -1,0 +1,100 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+
+
+
+    /* ANIMATION SHORTHAND */
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    animation: colorChange 5 linear 0s infinite alternate;
+
+    animation: widthChange 5 linear 0s infinite alternate;
+}
+
+.box:hover {
+    animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    transition-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    animation: colorChange 5s linear 0s infinite alternate;
+
+    animation: widthChange 5s linear 0s infinite alternate;
+
+}
+
+/* 
+CSS ANIMATIONS 
+        -> animation-name
+        -> animation-duration
+        -> animation-timing-function
+        -> animation-delay
+        -> animation-iteration-count
+        -> animation-direction [normal , reverse , alternate , alternate-reverse]
+*/
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+    }
+
+    to {
+        font-size: 40px;
+    }
+}
+
+@keyframes colorChange {
+    from {
+        background-color: green;
+    }
+
+    to {
+        background-color: blue;
+    }
+}
+
+@keyframes widthChange {
+    from {
+        width: 10px;
+        background-color: green;
+        color: yellow;
+    }
+
+    to {
+        width: 500px;
+        background-color: blue;
+        border-radius: 15px;
+        color: wheat;
+        text-align: center;
+    }
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* % in Animation */
+
+@keyframes colorAni {
+    0% {
+        background-color: pink;
+    }
+
+    30% {
+        background-color: blue
+    }
+
+    60% {
+        background-color: yellow
+    }
+
+    100% {
+        background-color: red
+    }
+}
+.box:hover{
+    animation: colorAni 5s linear infinite;
+}

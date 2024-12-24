@@ -1,0 +1,84 @@
+h3 {
+    font-size: 2rem;
+}
+
+span {
+    color: black;
+
+
+}
+
+h4 {
+    font-weight: 900;
+    color: rgb(6, 31, 251);
+    font-size: 1.4rem;
+}
+
+.margin {
+    margin-left: 100px;
+}
+
+/* ------------------------------------------------------------------------ */
+.container {
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: azure;
+
+    /* ----------------------------------- */
+
+    display: flex;
+    flex-direction: row;
+}
+
+#h3 {
+    text-align: center;
+}
+
+div div {
+    height: 100px;
+    width: 400px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* 3 - 1-align-items : flex-start */
+.container1 {
+    align-items: flex-start;
+    
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* 2 -align-items : flex-end */
+.container2 {
+    align-items: flex-end;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* 3 -align-items : center */
+.container3 {
+   align-items: center;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* 4 -align-items : center */
+.container4 {
+   align-items: baseline;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* 5 -align-items : center */
+.container5 {
+   align-items: stretch;
+}
+
+/* ------------------------------------------------------------------------ */

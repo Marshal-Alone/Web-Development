@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT ELEMETS</title>
+</head>
+<body>
+    
+    <div>
+        <h3>CHECKBOX</h3>
+        <form action="/action">     
+            <input type="checkbox" id="age" name="age" checked>
+            <label for="age">I am 18<sup>+</sup></label>
+
+            <button type="submit">SEARCH</button>
+        </form><hr>
+
+        <h3>CHECKBOX GROUPING</h3>
+        <h5>CHOOSE YOUR SUBJECTS</h5>
+        <form action="/action">
+            <input type="checkbox" id="c2" name="sub" value="math">
+            <label for="c2">Math</label>
+
+            <input type="checkbox"  id="c1"name="sub" value="english" >
+            <label for="c1">English</label>
+
+            <input type="checkbox" id="c3" name="sub" value="Science">
+            <label for="c3">Science</label>
+
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div><hr>
+
+    <div>
+        <form action="/action">
+            <h3>RADIO BUTTONs</h3>
+            <input type="radio" id="apple" name="fruit" value="apple">
+            <label for="apple">Apple</label>
+    
+            <input type="radio" id="mango" name="fruit" value="mango">
+            <label for="mango">Mango</label>
+    
+            <input type="radio" id="banana" name="fruit" value="banana">
+            <label for="banana" >Banana</label>
+            <br>
+            <button type="submit">Submit</button>
+        </form><hr>
+    </div>
+
+    <div>
+        <form action="/action">
+            <h3>DROPDOWN Select</h3>
+            <label for="profession">Profession :</label>
+             <select name="profession" id="profession">
+                <option>--Select your option--</option>
+                 <option value="student">Student</option>
+                 <option value="dev" >Developer</option>
+             </select> <br><br>
+    
+             <button type="submit">SUBMIT</button>
+        </form><hr>
+    </div>
+
+    <div>
+        <form action="/action">
+            <h3>RANGE</h3>
+            <label for="volume">Select your Volume Level</label>
+            <input type="range" 
+            min="0" max="100" 
+            step="10" 
+            value="70"
+            id="volume" name="vol">
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div><hr>
+
+    <div>
+        <h4>TEXT AREA</h4>
+        <form action="/action">
+             <label for="feedback">Please give your valuable feedback :</label>
+             <textarea
+                id="feedback" 
+                name="feedback"
+                placeholder="Write feedback here"
+             ></textarea>
+         
+             <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+    
+</body>
+</html>

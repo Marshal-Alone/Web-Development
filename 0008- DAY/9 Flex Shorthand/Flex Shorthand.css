@@ -1,0 +1,75 @@
+h3 {
+    font-size: 2rem;
+}
+
+span {
+    color: black;
+}
+
+h4 {
+    font-weight: 900;
+    color: rgb(6, 31, 251);
+    font-size: 1.4rem;
+}
+
+.margin {
+    margin-left: 100px;
+}
+
+.container {
+    width: 80%;
+    height: 200px;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+.container12{
+    height: 500px;
+    flex-direction: column;
+}
+
+#h3 {
+    text-align: center;
+}
+
+div div {
+    height: 200px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* 1 - flex-grow | flex-shrink | flex-basis */
+#changing1{
+    flex: 2 2 100px;
+}
+
+/* ---------------------------------- */
+
+/* 2 - flex-grow | flex-basis */
+#changing2{
+    flex: 2 200px;
+    text-decoration: dashed
+}
+
+/* ---------------------------------- */
+
+/* 3 - flex-grow (unitless) */
+#changing3{
+    flex: 2;
+}
+
+/* ---------------------------------- */
+
+/* 4 - flex-basis */
+#changing4{
+    flex: 500px;
+}
+
+/* ---------------------------------- */

@@ -1,0 +1,88 @@
+/* UNIVERSAL SELECTOR : Apply changes to whole document*/
+*{
+    font-family: 'Courier New';
+    background-color: antiquewhite;
+}
+
+/* ELEMENT SELECTOR */
+h3{
+    color: purple;
+}
+
+h1,h3{
+    /* apply property to multiple.. */
+    color: #B92B27;
+}
+
+/* ID SELECTOR : '#' */
+#login{
+    background-color: white;
+}
+#signup{
+    color: white;
+    background-color: #B92B27;
+}
+
+/* CLASS SELECTOR : '.' */
+.upvote{
+    background-color: green;
+    color: white;
+}
+
+/* DESCENDENT SELECTOR */
+.post a{
+    /* sirf .post class ke andar wale anchor tag */
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li {
+    color: hotpink;
+}
+nav ul li a{
+    color: rgb(35, 61, 206);
+}
+
+/* ADJACENT SIBLING COMBINATOR */
+p + h3{
+    /* SELECT ALL h3 THAT COMES IMMEDIATELY AFTER ANY paragraph */
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: aqua;
+}
+
+/* CHILD COMBINATOR */
+span>button{
+    /* SELECTS ALL buttons WHICH ARE DIRECT DESCENDENTS OF span */
+    background-color: #B92B27;
+    color: red;
+}
+
+div > input{
+    background-color: darksalmon;
+}
+
+/* ATTRIBUTE SELECTOR */
+input[type="text"]{
+    /* SELECTS ELEMENTS BASED ON PRESENCE OR VALUE OF A GIVEN ATTRIBUTE */
+    color:green ;
+}
+
+input[type="password"]{
+    color: red;
+}
+
+input[type]{
+    background-color: ghostwhite;
+}
+
+/* PRACTICE Q2 */
+#myid{
+    color: green;
+}
+div[id="myid"] p{
+    color: green;
+}
+

@@ -1,0 +1,65 @@
+/*POSITION- STATIC - The top right bottom left and Z-Index properties have no effect. This is the default value */
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+    
+}
+
+#static{
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+/* POSITION-RELATIVE : The offset is relative to itself based on the values of top right, bottom and left. 
+
+Space is created for it*/
+
+#Relative{
+    background-color: yellow;
+    position: relative;
+    top: 100px;
+    left: 0px;
+}
+
+
+/* POSITION-ABSOLUTE : The element is removed from the normal document flow, and no space is created for the element in the page layout. 
+
+It is positioned relative to its closest positioned ancestor, if any; otherwise it is placed relative to the initial containing block. 
+
+No space is created for it*/
+
+#absolute{ /*parent section->body*/
+    background-color: yellow;
+    position: absolute;
+    top: 100px; 
+    left: 500px;
+}
+
+
+
+/* Position Fixed :The element is removed from the normal document flow, and no space is created for the element in the page layout. 
+
+It is  position relative to the initial containing block established by the viewport */
+
+#fixed{ 
+    background-color: yellow;
+    position:fixed ;
+    top: 255px; 
+    left: 450px;
+}
+
+
+/* Position Sticky :  */
+
+#sticky{ 
+    background-color: yellow;
+    position:sticky ;
+    top: 50px;
+
+}

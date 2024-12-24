@@ -1,0 +1,69 @@
+
+.container {
+    width: 620px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+
+
+}
+
+.item {
+    width: 100px;
+    height: 50px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* GRID TEMPLATE 
+        They define the lines & track sizing */
+.container{
+    grid-template-rows:100px 100px 100px;
+    grid-template-columns: 200px 200px 200px;
+
+    /* grid-template-columns: auto auto auto; */
+
+    grid-gap: 10px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* ----------COMMON PROPERTIES------ */
+/*
+ HORIZONTAL
+    -justify-items : container 
+    -justify-self : item       
+
+Vertical
+    -align-items : container
+    -align-self : item
+
+    -place-items
+    -place-self    
+*/
+
+
+
+.container{
+    justify-items: center;
+}
+.one{
+    justify-self: end;
+}
+
+
+.container{
+    align-items: center;
+}
+.one{
+    align-self: end;
+}
+
+/* if both horizontal and verical values are to be same */
+.container{
+    place-items: center;
+}
+.one{
+    place-self: center;
+}

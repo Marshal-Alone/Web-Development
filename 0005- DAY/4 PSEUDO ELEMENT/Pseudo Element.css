@@ -1,0 +1,88 @@
+/* PSEUDO ELEMENT */
+
+/* A Keyword added to a selector that lets you style a specific part of the selected element 
+*/
+
+/* 
+::first-letter
+::first-line
+::selection 
+*/
+
+
+
+/* ::first-letter */
+h1::first-letter{
+    color: #5bfb11;
+}
+
+/* ::first-line */
+#p1::first-line{
+    color: rgb(255, 0, 0);
+}
+
+/* ::selection  */
+p::selection{
+    background-color: rgba(176, 176, 71, 0.448);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* UNIVERSAL SELECTOR : Apply changes to whole document*/
+*{
+    font-family: 'Courier New';
+    
+}
+
+/* ELEMENT SELECTOR */
+h3{
+    color: purple;
+   
+}
+
+
+h1,h3{
+    /* apply property to multiple.. */
+    color: #B92B27;
+}
+
+
+/* DESCENDENT SELECTOR */
+.post a{
+    /* sirf .post class ke andar wale anchor tag */
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li {
+    color: hotpink;
+}
+nav ul li a{
+    color: rgb(35, 61, 206);
+}
+
+
+
+

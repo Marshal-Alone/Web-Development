@@ -1,0 +1,81 @@
+h3 {
+    font-size: 2rem;
+}
+
+span {
+    color: black;
+}
+
+h4 {
+    font-weight: 900;
+    color: rgb(6, 31, 251);
+    font-size: 1.4rem;
+}
+
+.margin {
+    margin-left: 100px;
+}
+
+/* Base container styles */
+.container {
+    width: 80%;
+    height: 500px;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Enable wrapping to see align-content effects */
+}
+
+#h3 {
+    text-align: center;
+}
+
+div div {
+    height: 150px;
+    width: 400px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* 1 - align-content: flex-start */
+.container1 {
+    align-content: flex-start;
+}
+
+/* 2 - align-content: flex-end */
+.container2 {
+    align-content: flex-end;
+}
+
+/* 3 - align-content: center */
+.container3 {
+    align-content: center;
+}
+
+/* 4 - align-content: space-between */
+.container4 {
+    align-content: space-between;
+}
+
+/* 5 - align-content: space-around */
+.container5 {
+    align-content: space-around;
+}
+
+/* 6 - align-content: space-evenly */
+.container6 {
+    align-content: space-evenly;
+}
+
+/* 7 - align-content: baseline */
+.container7 {
+    align-content: baseline;
+}
+
+/* 8 - align-content: stretch */
+.container8 {
+    align-content: stretch;
+}

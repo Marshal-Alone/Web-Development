@@ -1,0 +1,48 @@
+h1{
+    background-color: yellow;
+}
+
+@media (width:400px) {
+    h1{
+        background-color: red;
+        color: white;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+}
+
+@media (min-width:400px) {
+    /* Jab width 400px ya usse jyada hogi */
+    /* jab width kam se kam 400px ho but usse jyada bhi ho sakti  */
+    h1{
+        background-color: greenyellow;
+    }
+}
+
+@media (max-width:200px) {
+    /* Jab width 200px ya usse kam hogi */
+    /* jab width at max 200px ho ua usse kam ho but usse jyada nhi  */
+    h1{
+        background-color:pink ;
+    }
+}
+
+@media (min-width:200px) and (max-width:300px) {
+    h1{
+        background-color: magenta;
+    }
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* -----------------ORIENTATION-------------- */
+
+@media (orientation:landscape) {
+    h1{
+        background-color: aqua;
+        color: brown;
+    }
+}

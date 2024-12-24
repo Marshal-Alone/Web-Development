@@ -1,0 +1,91 @@
+.container{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+}
+.container div{
+    background-color: pink;
+    /* font-size: 1.5rem; */
+}
+.header{
+    grid-column: 1/span 12;
+}
+
+.sidebar{
+    grid-column: 1/span 3;
+    grid-row: 2/span 10;
+}
+
+.navigation{
+    grid-column: 4/span 6;
+}
+
+.ads{
+    grid-column: 10/span 3;
+    grid-row: 2/span 10;
+}
+.main{
+    grid-column: 4/span 6;
+    grid-row: 3/span 9;
+}
+.footer{
+    grid-column: 1/span 12;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* Q2:  Use Media Queries to change the above layout when the viewport width goes below 720px */
+@media (max-width:720px) {
+    .header{
+        grid-column: 1/span 12;
+    }
+    .navigation{
+        /* grid-row-start: 2; */
+        grid-row: 2;
+        grid-column: 1/span 12;
+    }
+    .sidebar{
+        grid-row:3/span 9;
+        grid-column: 1/span 3;
+    }
+    .main{
+        grid-column:4/span 9 ;
+        grid-row:3/span 9 ;
+    }
+    .ads{
+        grid-row: 12;
+        grid-column: 1/span 3;
+    }
+    .footer{
+        grid-row:12;
+        grid-column: 4/span 9;
+    }
+}
+
+/* ------------------------------------------------------------------------ */
+/* Q3 - Loader */
+
+.loader{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 16px solid #f3f3f3;
+    border-top:16px solid goldenrod;
+    
+}
+.loader:hover{
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,24 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    transition-duration: 1s;
+    /* transition-delay: 1s; */
+    animation-timing-function: ease;
+
+    
+
+    
+
+    /* TRANSITION SHORTHAND : propert-to-change-name
+    transition: duration effect delay */
+    transition: width 5s linear 0s ;
+}
+
+div:hover{
+    background-color: black;
+    border-radius: 50%;
+
+    width: 300px;
+    background-color: pink;
+}

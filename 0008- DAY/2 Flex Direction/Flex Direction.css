@@ -1,0 +1,82 @@
+
+h3{
+    font-size: 2rem;
+}
+    span{
+    color: black;
+
+
+}
+h4{
+    font-weight: 900;
+    color: rgb(6, 31, 251);
+    font-size: 1.4rem;
+}
+.margin{
+    margin-left:100px ;
+}
+/* ------------------------------------------------------------------------ */
+.container{
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: azure;
+
+    /* ----------------------------------- */
+
+    display: flex;
+    flex-direction: row;
+}
+#h3{
+    text-align: center;
+}
+
+div div{
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+/* ------------------------------------------------------------------------ */
+/* 1- flexbox-direction : row ;  
+        main axis - left to right */
+.container1{
+    flex-direction: row;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* 2- flexbox-direction : row-reverse; 
+        main axis -  right to left */
+.container2{
+    flex-direction: row-reverse;
+}
+
+/* ------------------------------------------------------------------------ */
+.column-container{
+    display: flex;
+    height: 670px;
+}
+
+/* 3- flexbox-direction : column ; 
+        main axis, - top to bottom */
+.container3{
+    width: 34%;
+    height: 98%;
+    background-color: rgb(123, 171, 171);
+    flex-direction: column;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* 4- flexbox-direction : column-reverse
+        main axis -  bottom to top */
+.container4{
+    width: 34%;
+    height: 98%;
+    flex-direction: column-reverse;
+    background-color: rgb(123, 171, 171);
+}

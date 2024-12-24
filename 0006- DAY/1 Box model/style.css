@@ -1,0 +1,53 @@
+div {
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+    border: 3px solid black;
+
+    /* border-left: 3px dashed blue ;
+    border-right: 3px dashed blue ;
+    border-top: 3px dashed yellow ;
+    border-bottom: 3px dashed yellow ; */
+
+    /* RADIUS */
+    border-radius: 10px;
+
+    /* PADDING */
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    /* margin */
+    margin-bottom:25px ;
+    margin-left:30px ;
+
+    margin: 20px;
+    margin: 10px 20px 30px;
+    margin: 10px 10px 10px 10px;
+}
+
+h1 {
+    border: 2px solid purple;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 0;
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 9px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    /* padding: 5px 5px; */
+ 
+    /* padding: 10px 20px; */
+
+    /* padding: 10px 20px 30px; */
+
+    /* padding: 10px 20px 30px 40px; */
+
+    background-color: yellow;
+}

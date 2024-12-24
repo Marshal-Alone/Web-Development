@@ -1,0 +1,63 @@
+p{
+    border: solid;
+    width: 70%;
+}
+
+/* TEXT ALIGNMENT */
+#h1{
+    text-align: right;
+    text-align: center;
+    
+    border:solid;
+}
+
+html{
+    border:solid;
+}
+
+#p1{
+    width: 50%;
+    border: solid;
+    text-align: justify;
+}
+
+/* FONT WEIGHT */
+#p2{
+    font-weight: 400; /*100 to 900*/
+    font-weight: bold; /*700*/
+}
+
+/* TEXT DECORATION */
+#p31{
+    border: 0cm;
+    text-decoration: overline;
+    text-decoration: double red overline;
+}
+
+#p32{
+    border: 0cm;
+    text-decoration: blue line-through;
+}
+
+#p33{
+    border: 0cm;
+    text-decoration: wavy underline;
+
+}
+a{
+    text-decoration: none;
+}
+
+/* LINE HEIGHT */
+#p4{
+    line-height: 2;
+}
+
+/* LETTER SPACING */
+#p51{
+    letter-spacing: normAL;
+}
+#p52{
+    width: 100%;
+    letter-spacing: 5px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Tables</h1>
+    <table border="black">
+        <caption>Food Menu </caption>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+            
+        <tr>
+            <td>Frooti</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>Chips</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td>Sprite</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+<!---------------------------------------------------->
+
+    <h2>Semantics in Table</h2>
+    <table border="black">
+        <caption>Food Menu </caption>
+        <!-- Table Header -->
+        <thead style="color: aqua;background-color: black;">
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+          
+        <!-- Table Body -->
+        <tbody >
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+            </tr>
+    
+            <tr>
+                <td>Chips</td>
+                <td>5</td>
+            </tr>
+    
+            <tr>
+                <td>Sprite</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+
+        <!-- Footer -->
+         <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>40</th>
+            </tr>
+         </tfoot>
+    </table>
+
+<!---------------------------------------------------->
+
+    <h1>Colspan & Rowspan</h1>
+    <table border="black">
+        <caption>Food Menu </caption>
+        <thead>
+            <tr>
+               <th rowspan="3">Item</th>
+               <th colspan="3">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+
+        </thead>
+        
+        <tbody>
+            
+            <tr>
+                <td>Frooti</td>
+                <td>35</td>
+                <td>0.35</td>
+            </tr>
+            <tr>
+                <td>Chips</td>
+                <td>50</td>
+                <td>0.5</td>
+            </tr>
+            <tr>
+                <td>Sprite</td>
+                <td>25</td>
+                <td>0.35</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>110</th>
+                <th>1.2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+</html>

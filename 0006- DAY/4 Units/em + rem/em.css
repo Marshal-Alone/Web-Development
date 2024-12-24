@@ -1,0 +1,43 @@
+#outer{
+    height: 90px;
+    width: 90px;
+    border: 2px solid black;
+    background-color: pink;
+    font-size: 10px;
+}
+#inner{
+    height: 40px;
+    width: 40px;
+    background-color: cornflowerblue;
+    font-size: 1em; /* double the size of outer */
+    padding: 2em; /*padding =2*font size*/
+
+}
+/* --------------------------------------------------------------- */
+button{
+    font-size: 20px;
+    border-radius: 20px;
+    border: 5px Solid black;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/* --------------------------------------------------------------- */
+#section1{
+    font-size: 10px;
+}
+.div1{
+    font-size: 2em; /*Sonwballing effect*/
+    display: inline-block;
+}
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+
+/* --------------------------REM------------------------- */
+#section2{
+    font-size: 10px;
+}
+.div2{
+    font-size: 2rem; /*Root element ke comparision me set hoti hai*/
+    display: inline-block;
+}
