@@ -1,4 +1,4 @@
-//GUESS MOVIE
+//                              GUESS MOVIE
 // Guess_Movie();
 function Guess_Movie() {
     let favMov = "iron man";
@@ -20,7 +20,7 @@ function Guess_Movie() {
 
 
 
-//LOOPS WITH ARRAY
+//                               LOOPS WITH ARRAY
 //loop_with_arr()
 function loop_with_arr() {
     let fruits = [1, 2, 3, 4, 5];
@@ -38,7 +38,7 @@ function loop_with_arr() {
 
 
 
-// NESTED LOOPS
+//                                   NESTED LOOPS
 // Nested_Loop();
 // std_data()
 function Nested_Loop() {
@@ -78,17 +78,17 @@ function std_data() {
 
 
 
-//FOR OF LOOP
+//                                  FOR OF LOOP
 // for_of();
 // for_of_nested();
 function for_of() {
     let nums = [1, 2, 3, 4, 5];
     for (num of nums) {
-        console.log(num,nums.indexOf(num));
+        console.log(num, nums.indexOf(num));
     }
 
     for (char of "Marshal") {
-        console.log(char,"Marshal".indexOf(char));
+        console.log(char, "Marshal".indexOf(char));
     }
 
 
