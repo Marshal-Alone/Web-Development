@@ -1,7 +1,7 @@
 // Qs 1. Write a JS program to delete all occurrences of element 'num' in a given array.
 // Example : if = [1, 2, 3, 4, 5, 6, 2,3] & num = 2
 // Result should be arr= [1, 3, 4, 5, 6, 3]
-// delAll_Occurrences()
+delAll_Occurrences()
 function delAll_Occurrences() {
     let arr1 = [1, 2, 3, 4, 5, 6, 2, 3];
     let num = 2;
@@ -22,7 +22,7 @@ function delAll_Occurrences() {
 
 // Qs 2. Write a JS program to find the no of digits in a number.
 // Example : if number = 287152, count = 6
-// calc_sizeof_numer()
+calc_sizeof_numer()
 function calc_sizeof_numer() {
     let number = 287152;
     let count = number.toString().length;
@@ -45,7 +45,7 @@ function calc_sizeof_numer() {
 
 // Qs3. Write a JS program to find the sum of digits in a number.
 // Example : if number = 287152, sum = 25
-// sum_of_num();
+sum_of_num();
 function sum_of_num() {
     let number = 287152;
     let sum = 0;
@@ -80,7 +80,7 @@ function sum_of_num() {
 // - lx2x3 = 6
 // 0! Is always 1
 
-// factorial();
+factorial();
 function factorial() {
     let num = 7;
     // RECURSION
@@ -118,7 +118,7 @@ function factorial() {
 
 
 // Qs 5. Find the largest number in an array with only positive numbers.
-// largest_in_arr();
+largest_in_arr();
 function largest_in_arr() {
     let arr = [2, 5, 10, 4, 2, 7, 1, 9];
     let largest = 0;
