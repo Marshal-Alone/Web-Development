@@ -81,29 +81,79 @@ console.log(sum2(5, 5));
 }
 
 
-//igher Order Function Return
+//Higher Order Function Return
 {
     function oddEvenTest(request) {
         if (request == "odd") {
-            return function (n) {
+            function odd(n) {
                 if (!(n % 2 == 0)) {
                     console.log("Odd");
+                    return "odd";
                 } else {
                     console.log("Not odd");
+
                 }
             }
+            return odd;
         } else if (request == "even") {
-            if (n % 2 == 0) {
-                console.log("Even");
-            } else {
-                console.log("Not Even");
+            return function (n) {
+                if (n % 2 == 0) {
+                    console.log("Even");
+                    return "even";
+                } else {
+                    console.log("Not Even");
+
+                }
             }
         } else {
             console.log("wrong request");
         }
     }
     let req = "odd";
-    let fun = oddEvenTest(req);
-    console.log("res", fun(10));
+    // let req = "even";
+    let test = oddEvenTest(req);
+    test(9);
+
+    Add_and_Append("high-order-reTurn", `9 is `, test(9));
 }
+
+
+
+
+//Methods
+
+const calculator = {
+    add: function (a, b) {
+        return a + b;
+    },
+    sub: function (a, b) {
+        return a - b;
+    },
+    mul: function (a, b) {
+        return a * b;
+    },
+};
+
+calculator.add(10, 10);
+calculator.sub(10, 10);
+calculator.mul(10, 10);
+
+Add_and_Append("calc", `calculator.add(10, 10)`, calculator.add(10, 10));
+
+Add_and_Append("calc", `calculator.sub(10, 10)`, calculator.sub(10, 10));
+
+Add_and_Append("calc", `calculator.mul(10, 10)`, calculator.mul(10, 10));
+
+//shorthand
+const calculator2 = {
+    add(a, b) {
+        return a + b;
+    },
+    sub(a, b) {
+        return a - b;
+    }
+}
+console.log(calculator2);
+console.log(calculator2.add(5, 5));
+
 
