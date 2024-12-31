@@ -1,0 +1,21 @@
+.box{
+    width: 50vw;
+    height: 10vh;
+    border: 1px solid;
+    margin-top: 50px;
+    background-color: yellow;
+    color: black;
+}
+
+.box2{
+    width: 50vw;
+    /* height: 10vh; */
+    border: 1px solid;
+    margin-top: 50px;
+    background-color: rgba(8, 239, 120, 0.436);
+    color: black;
+}
+
+.white{
+    color: white;
+}
