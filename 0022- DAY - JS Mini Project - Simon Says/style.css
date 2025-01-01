@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    color: aliceblue;
+}
+
+.btn {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 7px solid black;
+    margin: 2.5rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pink {
+    background-color: pink;
+    opacity: 0.8;
+}
+
+.orange {
+    background-color: #f99b45;
+    opacity: 0.8;
+}
+
+.teal {
+    background-color: #63aac0;
+    opacity: 0.8;
+}
+
+.aqua {
+    background-color: aqua;
+    opacity: 0.8;
+}
+
+.flash {
+    background-color: white;
+    opacity: 1;
+}
+
+.user-flash {
+    background-color: rgba(0, 128, 0, 0.719);
+    opacity: 1;
+}
+
+.red {
+    background-color: red;
+    opacity: 1;
+}
+
+.highscore {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    margin: 5px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+    box-shadow: 0 1px 12px#63aac0;
+    border: none;
+    border-radius: 1rem;
+    width: fit-content;
+    max-width: 250px;
+    word-wrap: break-word;
+    overflow-y: auto;
+    color: black;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+
+@media only screen and (max-width: 567px) {
+    .btn{
+        width: 4rem;
+        height: 4rem;
+        
+    }
+}
