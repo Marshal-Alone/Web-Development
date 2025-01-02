@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizing Call Stack</title>
+</head>
+<style>
+    h4 {
+        margin: 0;
+    }
+</style>
+
+<body>
+    <h1>Visualizing Call Stack</h1>
+
+    <h4>function one() {</h4>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp; return 1;</h4>
+    <h4>}</h4>
+    <h4>function two() {</h4>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp; return one() + one();</h4>
+    <h4>}</h4>
+    <h4>function three() {</h4>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp; let sum = two() + one();</h4>
+    <h4> &nbsp;&nbsp;&nbsp;&nbsp; console.log(sum);</h4>
+    <h4>}</h4>
+    <br><br>
+
+    <h4>one() </h4>
+    <h4>&nbsp; ->1 </h4>
+    <h4>two() </h4>
+    <h4>&nbsp; ->2 </h4>
+    <h4>three() </h4>
+    <h4>&nbsp; ->3 </h4>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
