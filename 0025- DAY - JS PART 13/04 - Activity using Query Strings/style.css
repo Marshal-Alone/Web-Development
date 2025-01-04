@@ -1,0 +1,8 @@
+*{
+    margin: 10px;
+}
+
+ul{
+    height: 150px;
+    overflow-y: auto;
+}
