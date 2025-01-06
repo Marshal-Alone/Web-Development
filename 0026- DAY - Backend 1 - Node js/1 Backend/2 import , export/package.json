@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "random-words": "^2.0.1"
+  },
+  "name": "impoort-export",
+  "version": "1.0.0",
+  "main": "math2.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
