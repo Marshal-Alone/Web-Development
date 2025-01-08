@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- use includes to bring head.ejs -->
+<%- include("includes/head.ejs")%>
+
+  <body>
+    <div class="container">
+      <h4>@<%=data.name%>
+      </h4>
+      <button>Follow</button>
+      <button>Message</button>
+      <br />
+    </div>
+
+    <p>
+      Posts: <%= data.posts.length %>
+        Followers: <%= data.followers %>
+          Following: <%= data.following %>
+    </p>
+
+    <hr>
+    <% for (post of data.posts) { %>
+      <img src="<%= post.image %>" alt="img">
+      <p>
+        Likes: <%= post.likes %>
+          Comments: <%= post.comments %>
+            Following: <%= data.following %>
+      </p>
+      <% } %>
+
+        <%- include("includes/footer") %>
+
+          <script src="/app.js"></script>
+  </body>
+
+</html>

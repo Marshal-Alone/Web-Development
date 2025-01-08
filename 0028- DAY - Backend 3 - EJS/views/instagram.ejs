@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+  </head>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+      margin: 0 auto;
+      /* background-color: aqua; */
+      width: fit-content;
+      padding: 5px;
+
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: 2px solid;
+    }
+
+    button {
+      height: fit-content;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 70px;
+
+      background-color: #ededed;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h4>@<%=username%></h4>
+      <button>Follow</button>
+      <button>Message</button>
+      <br />
+    </div>
+    <h5>Accounts that follow you :</h5>
+    <ul>
+      <% for(user of followers){ %>
+      <li>
+        <%=user%>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
