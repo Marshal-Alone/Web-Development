@@ -1,0 +1,15 @@
+{
+  "name": "0029--day---miscellaneous",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marshal",
+  "license": "ISC",
+  "description": "GET & POST Req",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
