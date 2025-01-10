@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+<style>
+    form {
+        padding-top: 0;
+    }
+</style>
+
+<body>
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH" class="edit">
+        <h1 style="text-align: center; margin-top: 0px;">Edit your post</h1>
+        <h3 class="data ">Post id :<%=post.id%>
+        </h3>
+        <h3 class="data data2">Post username : @<%=post.username%>
+        </h3>
+
+        <textarea placeholder="Enter content" name="content" id="content"><%=post.content%>  </textarea>
+        <br><br>
+        <button>Submit Post</button>
+    </form>
+</body>
+<script>
+    let content = document.querySelector("#content");
+    const btn = document.querySelector("button");
+    btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (content.value.trim() == '') {
+            alert("Please check values again !");
+        } else {
+            event.target.form.submit();
+        }
+    })
+</script>
+
+</html>

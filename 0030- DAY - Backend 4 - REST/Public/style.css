@@ -1,0 +1,67 @@
+body {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+
+    /* overflow-y: auto; */
+}
+
+h1 {
+    color: maroon;
+
+}
+
+.post {
+    padding: 10px;
+    background-color: blanchedalmond;
+    width: 50vw;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: fit-content;
+
+}
+
+.user {
+    font-style: italic;
+    text-decoration: underline;
+    display: inline;
+}
+
+a {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Make it behave like a button */
+
+}
+
+.view-more {
+    /* padding: 10px; */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline;
+    color: gray;
+    position: relative;
+    /* right: -120px; */
+
+}
+
+.id {
+    opacity: 0.5;
+    margin: 0;
+    margin: 5px 0 10px 0;
+}

@@ -1,0 +1,62 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form {
+    background-color: rgb(49, 63, 64);
+    padding: 20px;
+    border-radius: 15px;
+    width: 30vw;
+    min-height: 50%;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* color: aliceblueposts; */
+    /* align-items: center; */
+}
+
+input {
+    margin-top: 15px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    min-width: 80%;
+    max-width: 80%;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+textarea {
+    height: 70px;
+    color: black;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.edit {
+    font-size: 0.8rem;
+}
+
+.data {
+    margin: 5px;
+
+}
+
+.data2 {
+    margin-bottom: 20px;
+}

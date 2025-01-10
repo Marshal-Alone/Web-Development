@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new post</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+
+<body>
+    <form method="post" action="/posts">
+        <input type="text" name="username" id="username" placeholder="Enter username">
+        <br><br>
+        <textarea placeholder="Enter content" name="content" id="content">  </textarea>
+        <br><br>
+        <button>Submit Post</button>
+    </form>
+</body>
+<script>
+    let username = document.querySelector("#username");
+    let content = document.querySelector("#content");
+    const btn = document.querySelector("button");
+    btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (username.value.trim() == '' || content.value.trim() == '') {
+            alert("Please check values again !");
+        } else {
+            event.target.form.submit();
+        }
+    })
+</script>
+
+</html>
