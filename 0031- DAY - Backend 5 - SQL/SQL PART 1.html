@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Learning Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #2a2a2a;
+            font-weight: 900;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 1.1rem;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><u>SQL PART-1 : Notes</u></h1>
+
+    <h2>1. Creating Databases</h2>
+    <ul>
+        <li><strong>Command:</strong>
+            <pre><code>CREATE DATABASE college;</code></pre>
+            Creates a database named <code>college</code>.
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li><strong>Conditional Creation:</strong>
+            <pre><code>CREATE DATABASE IF NOT EXISTS instagram;</code></pre>
+            Ensures the database <code>instagram</code> is created only if it doesn't already exist.
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li><strong>Switching to a Database:</strong>
+            <pre><code>USE instagram;</code></pre>
+            Sets the current database context to <code>instagram</code>.
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <hr>
+    <br>
+    <h2>2. Creating Tables with Constraints</h2>
+    <ul>
+        <li><strong>User Table:</strong>
+            <pre><code>CREATE TABLE user (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(50),
+    Email VARCHAR(50) UNIQUE,
+    Followers INT,
+    Following INT,
+    Age INT,
+    CONSTRAINT CHECK (age >= 13)
+);</code></pre>
+            <ul>
+                <li><strong>Columns:</strong>
+                    <ul>
+                        <li><code>Id</code>: Auto-incrementing primary key.</li>
+                        <li><code>Name</code>: Stores names up to 50 characters.</li>
+                        <li><code>Email</code>: Unique constraint ensures no duplicate emails.</li>
+                        <li><code>Followers</code> and <code>Following</code>: Integers to track social stats.</li>
+                        <li><code>Age</code>: Must be 13 or older (enforced by <code>CHECK</code>).</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li><strong>Post Table:</strong>
+            <pre><code>CREATE TABLE post (
+    id INT PRIMARY KEY,
+    content VARCHAR(100),
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES user (id)
+);</code></pre>
+            <br>
+            <hr>
+            <br>
+            <ul>
+                <li><strong>Columns:</strong>
+                    <ul>
+                        <li><code>id</code>: Primary key.</li>
+                        <li><code>content</code>: Text content up to 100 characters.</li>
+                        <li><code>user_id</code>: Foreign key referencing <code>user (id)</code>.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <hr>
+    <br>
+    <h2>3. Inserting Data</h2>
+    <ul>
+        <li><strong>Adding Users:</strong>
+            <pre><code>INSERT INTO user (Id, Name, Email, Followers, Following, Age)
+VALUES
+(1, "Adam", "adam@gmail.com", 123, 145, 15),
+(2, "Eve", "eve@gmail.com", 200, 200, 25);</code></pre>
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li><strong>Inserting Without Specifying Columns:</strong>
+            <pre><code>INSERT INTO user 
+VALUES
+(3, "Man", "man@gmail.com", 999, 999, 999);</code></pre>
+            Be cautious with this approach—it requires values for all columns in the correct order.
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <h2>4. Querying Data</h2>
+    <ul>
+        <li><strong>Retrieve All Columns:</strong>
+            <pre><code>SELECT * FROM user;</code></pre>
+            Fetches all rows and columns from the <code>user</code> table.
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li><strong>Specific Columns:</strong>
+            <pre><code>SELECT id, name, email FROM user;</code></pre>
+            Returns only <code>id</code>, <code>name</code>, and <code>email</code>.
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li><strong>Filter Unique Values:</strong>
+            <pre><code>SELECT DISTINCT age FROM user;</code></pre>
+            Retrieves distinct ages, avoiding duplicates.
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <hr>
+    <hr>
+    <br>
+    <h2>Key Concepts Reinforced</h2>
+    <ul>
+        <li><b>Primary Keys:</b> Ensure each row in a table is uniquely identifiable.</li>
+        <br>
+        <hr>
+        <br>
+        <li><b>Foreign Keys:</b> Link tables to establish relationships.</li>
+        <br>
+        <hr>
+        <br>
+        <li><b>Constraints:</b>
+            <ul>
+                <li><code>UNIQUE</code>: Prevents duplicate entries.</li>
+                <li><code>CHECK</code>: Validates data against a condition.</li>
+            </ul>
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li><b>Queries:</b>
+            <ul>
+                <li><code>SELECT</code>: Fetch data.</li>
+                <li><code>DISTINCT</code>: Remove duplicates.</li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+</body>
+
+</html>
