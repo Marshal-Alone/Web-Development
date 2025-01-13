@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Username</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: rgba(255, 0, 0, 0.648);
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn-primary:hover {
+            background-color: rgb(255, 0, 0);
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Delete user</h1>
+        <form action="/user/<%=user.id%>/?_method=DELETE" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="<%=user.username %>" disabled>
+
+                <br>
+
+                <label for="password">Password</label>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="password" name="password" value="" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: red;">Delete User</button>
+        </form>
+    </div>
+
+</body>
+<script>
+    console.log("<%=user.username%>")
+    //get real password
+    let real_pass = "<%=user.password %>";
+    console.log("Real ->", real_pass);
+
+    let btn = document.querySelector("button");
+    btn.addEventListener('click', (event) => {
+
+        //get values
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+
+        let user_name = usernameInput.value;
+        console.log('user name -> ', user_name)
+
+        let user_pass = passwordInput.value;
+        console.log("User ->", user_pass);
+
+        // Reset custom validity messages
+        usernameInput.setCustomValidity("");
+        passwordInput.setCustomValidity("");
+
+
+        //if username and password are NOT empty
+        if (!(user_pass == '')) {
+            //prevent default
+            event.preventDefault();
+
+            // If both fields are filled, check the password
+            if (user_pass === real_pass) {
+                event.target.form.submit();
+            } else {
+                passwordInput.setCustomValidity("Please check your password again !!");
+                passwordInput.reportValidity();
+                event.preventDefault()
+            }
+
+            // if username and password are empty
+        } else {
+
+            //if password is empty            
+            if (user_pass == '') {
+                passwordInput.setCustomValidity("Please enter your password.");
+                passwordInput.reportValidity();
+                event.preventDefault()
+            }
+        }
+    })
+
+
+</script>
+
+</html>

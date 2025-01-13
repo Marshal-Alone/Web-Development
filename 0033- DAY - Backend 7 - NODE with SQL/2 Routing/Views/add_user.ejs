@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New User</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Add New User</h1>
+        <form action="/user/add" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+
+                <label for="email" class="mt-3">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+
+                <label for="password" class="mt-3">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+
+                <label for="confirm-password" class="mt-3">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add User</button>
+        </form>
+    </div>
+
+</body>
+<script>
+    //select inputs
+    let username_input = document.querySelector("#username");
+    let email_input = document.querySelector("#email");
+    let password_input = document.querySelector("#password");
+    let confirm_password_input = document.querySelector("#confirm-password");
+
+    let btn = document.querySelector("button");
+    btn.addEventListener("click", (event) => {
+        //get values
+        let username = username_input.value;
+        console.log(username)
+        let email = email_input.value;
+        let password = password_input.value;
+        let confirm_password = confirm_password_input.value;
+
+        //reset default validity msg
+        username_input.setCustomValidity("");
+
+        if (!(username == '' | password == '' | email == '' | confirm_password == '')) {
+            event.preventDefault();
+            if (password === confirm_password) {
+                event.target.form.submit();
+            } else {
+                confirm_password_input.setCustomValidity("Please check your password again");
+                confirm_password_input.reportValidity();
+                event.preventDefault();
+            }
+        }
+        else if (username == '') {
+            username_input.setCustomValidity("Please enter valid username");
+            username_input.reportValidity();
+            event.preventDefault();
+        }
+        else if (email == '') {
+            email_input.setCustomValidity("Please enter your email")
+            email_input.reportValidity();
+            event.preventDefault();
+        }
+        else if (password == '') {
+            password_input.setCustomValidity("Please enter your password");
+            password_input.reportValidity();
+            event.preventDefault();
+        }
+        else if (confirm_password == '') {
+            confirm_password_input.setCustomValidity("Please re-enter your password");
+            confirm_password_input.reportValidity();
+            event.preventDefault();
+        }
+    })
+
+
+
+
+</script>
+
+</html>
