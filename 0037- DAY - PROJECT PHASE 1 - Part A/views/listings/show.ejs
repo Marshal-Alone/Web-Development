@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Wanderlust | <%=listing.title%>
+    </title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="<%=listing.image.url%>" alt="<%=listing.image.filename%>" class="listing-img" />
+            <div class="card-content">
+                <h1 class="listing-title">
+                    <%=listing.title%>
+                </h1>
+                <p class="listing-location">
+                    <%=listing.location%>
+                </p>
+                <p class="listing-description">
+                    <%=listing.description%>
+                </p>
+                <div class="listing-footer">
+                    <span class="listing-price">
+                        &#8377; <%=listing.price.toLocaleString("en-in")%>/night
+                    </span>
+                    <a href="#" class="book-button">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a class="book-button" href="/listings/<%=listing._id%>/edit">Edit</a>
+        <br>
+        <br>
+        <!-- delete -->
+        <form action="/listings/<%=listing._id%>?_method=DELETE" method="POST">
+            <button class="book-button">Delete</button>
+        </form>
+    </div>
+</body>
+
+</html>
