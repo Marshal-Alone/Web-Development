@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h2>Edit Chat</h2>
+
+    <div class="chat-container2">
+        <form action="/chats/<%=chat._id%>?_method=PUT" method="post">
+            <input type="text" name="from" id="from" value="<%=chat.from%>" disabled><br><br>
+            <input type="text" name="to" id="to" value="<%=chat.to%>" disabled><br><br>
+            <input type="text" name="new_msg" id="new_msg" value="<%=chat.msg%>" required>
+
+            <button type="submit" class="send-btn">Update</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <h2>WhatsApp Chats</h2>
+        <div class="chat-container">
+            <p>From: <%= chat.from %>
+            </p>
+            <p>To: <%= chat.to %>
+            </p>
+            <p>
+                <%=chat.msg %>
+            </p>
+            <form action="/chats/<%=chat._id%>/edit" method="get">
+                <button class="edit-btn">Edit</button>
+            </form>
+
+            <form action="/chats/<%=chat._id%>?_method=DELETE" method="POST">
+                <button class="delete-btn">Delete</button>
+            </form>
+            <form action="/chats/<%=chat._id%>" method="GET">
+                <button class="delete-btn">Show</button>
+            </form>
+            <p>
+                <%=chat.created_at.toString().split(' ')[4] %> <br>
+                <%=chat.created_at.toString().split(' ').slice(0,4).join("-") %>
+            </p>
+        </div>
+
+
+            <div class="btn_container">
+                <a class="send-btn" href="http://localhost:8080/chats/new">New Chat</a>
+            </div>
+</body>
+
+</html>

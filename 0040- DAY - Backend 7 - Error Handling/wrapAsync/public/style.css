@@ -1,0 +1,165 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d1d7db;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #075e54;
+    margin-bottom: 30px;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container p {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.chat-container p:nth-child(1) {
+    /*select 1st child*/
+    color: #075e54;
+    font-weight: bold;
+}
+
+.chat-container p:nth-child(2) {
+    color: #128c7e;
+    font-weight: bold;
+}
+
+.chat-container p:nth-child(3) {
+    background-color: #dcf8c6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.chat-container,
+.chat-container2:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.btn_container {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    background-color: #f8f9f9;
+    padding: 1rem;
+}
+
+
+.msg-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+.send-btn {
+    padding: 8px 16px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #128C7E;
+}
+
+
+/* For new chat  */
+
+/* h2 {
+    text-align: center;
+    color: #1a73e8;
+    display: none;
+} */
+
+
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #a89f9f;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.send-btn {
+    /* background-color: ; */
+    width: 100px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #a89f9f;
+    border-radius: 5px;
+    margin-left: auto;
+    /* box-sizing: border-box; */
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the button */
+    display: block;
+    /* Ensure it's treated as a block-level element */
+
+}
+
+.chat-container2 {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-btn {
+    position: absolute;
+    right: 2rem;
+    padding: 5px 0 5px 0;
+    width: 80px;
+    top: 41%;
+    border: 1px solid #a89f9f;
+    border-radius: 5px;
+
+
+}
+
+.delete-btn {
+    /* position: absolute; */
+    right: 2rem;
+    padding: 5px 0 5px 0;
+    width: 80px;
+    top: 47%;
+    border: 1px solid #de1313;
+    background-color: #e17c7c;
+    border-radius: 5px;
+
+
+}
+
+.edit-btn:hover {
+    border-color: red;
+}
+
+.delete-btn:hover {
+    background-color: red;
+    color: white;
+    border-color: black;
+}
